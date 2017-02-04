@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Profile Dashboard Theme - Generic (Keep this in neutral tones as this must look subtle) this includes "Career Objective" and "Personal Minutiae" sections -->
+
+    <!-- Education and Trainings professional 1 -->
+
+    <!-- Technical Skills - Generic 2 (Tools and platforms and languages and philosophies, learnt overtime)-->
+
+    <!-- ***CARDS VIEW*** Profile Projects completed theme - professional 2 (Keep this is professional hues as each tile represents a client which you have worked with)-->
+
+    <!-- Playstore links to all the projects (in a playstore like tile grid). keep the theme accordingly.-->
+
+    <!-- ***CARDS VIEW***  Hobbies and Interests - funky (This includes tiles for blogging, travelling, trekking, poetry and food )-->
+
+    <!-- Generic - Cyan -->
+
+    <!-- Professional - Teal -->
+
+    <!-- Funky1 - yellow -->
+
+    <!-- Funky2 - deep orange -->
+
+</resources>
