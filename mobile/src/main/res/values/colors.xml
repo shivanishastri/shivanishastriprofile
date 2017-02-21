@@ -18,7 +18,18 @@
 
     <!-- Generic - Cyan -->
 
+
+
     <!-- Professional - Teal -->
+    <color name="profColorPrimary">#009688</color>
+    <color name="profColorSecondary">#80CBC4</color>
+    <color name="profColorPrimaryDark">#00695C</color>
+    <color name="profTextColorPrimary">#FFFFFF</color>
+    <color name="profWindowBackground">#FFFFFF</color>
+    <color name="profNavigationBarColor">#004D40</color>
+    <color name="profColorAccent">#A7FFEB</color>
+
+
 
     <!-- Funky1 - yellow -->
 

@@ -1,19 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<!--<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
     <data>
-        <variable name="professional" type="main.blogspot.souci.sans.chimney.me.com.sanssouci.professional.model.ProfessionalSnapshotModel"/>
-    </data>
+
+        <variable
+            name="professional"
+            type="main.blogspot.souci.sans.chimney.me.com.sanssouci.professional.model.ProfessionalSnapshotModel" />
+    </data>-->
 
     <!--Put Tab Layout here and add 3 fragments in each of the tabs. Each tab will have a common model, ProfessionalSnapshotModel -->
-    <LinearLayout
-        android:orientation="vertical"
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <TextView android:layout_width="wrap_content"
+
+        <!-- Module controls go here: Toolbar on top, followed by Tab Layout to fill in 3 fixed tabs. -->
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{professional.firstName}"/>
-        <TextView android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@{professional.lastName}"/>
-    </LinearLayout>
-</layout>
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="fill" style="@style/SansSouciTabLayout"
+                app:tabMode="fixed" />
+        </android.support.design.widget.AppBarLayout>
+
+        <!-- View pager to inflate 3 fragments and switch between them with scrolling effect -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+<!--
+</layout>-->

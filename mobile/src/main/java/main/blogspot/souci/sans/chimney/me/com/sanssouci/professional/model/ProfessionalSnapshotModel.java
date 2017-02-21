@@ -8,6 +8,10 @@ import java.io.Serializable;
 
 public class ProfessionalSnapshotModel implements Serializable {
 
+
+    public String tabOneProjectsCompleted;
+    public String tabTwoTechnicalSkills;
+    public String tabThreePlaystoreLinks;
     public String firstName;
     public String lastName;
 
